@@ -1,4 +1,4 @@
-# Hi, I'm <Tatyana Tacubao>! 👋
+# Hi, I'm Tatyana Tacubao! 👋
 
 I am an IT student at XU, My journey involves delving into the world of computer science, exploring new ideas.
 
