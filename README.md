@@ -1,16 +1,15 @@
-## Hi there 👋
+# Hi, I'm <Tatyana Tacubao>! 👋
 
-<!--
-**TatyyyTacs/TatyyyTacs** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I am an IT student at XU, My journey involves delving into the world of computer science, exploring new ideas.
 
-Here are some ideas to get you started:
+## 🚀 About Me
+- 🔭 I'm currently pursuing my Bachelor's Degree in Information Technology at XU.
+- 🌱 I am a couch potato.
+- 💩 Open to learning new things.
+- 📫 How to reach me: <20230028219@my.xu.edu.ph>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🌱 Currently Exploring
+- 🚀 Still learning HTML
+
+
+Thanks for stopping by!
