@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Valentine Card Yes or Yes option</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #ff9a9e, #fecfef);
+      font-family: "Segoe UI", system-ui, sans-serif;
+    }
+
+    .card {
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      text-align: center;
+      max-width: 360px;
+    }
+    .top-image {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 12px;
+      border: 3px solid #e63946;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 {
+      margin: 10px 0;
+      color: #e63946;
+    }
+
+    p {
+      margin: 10px 0 20px;
+      color: #444;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    button {
+      border: none;
+      padding: 10px 22px;
+      border-radius: 999px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.2s ease;
+    }
+
+    .yes-btn {
+      background: #e63946;
+      color: #fff;
+      box-shadow: 0 4px 10px rgba(230,57,70,0.4);
+    }
+
+    .no-btn {
+      background: #f1f1f1;
+      color: #333;
+    }
+
+    button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+    }
+
+    #response {
+      margin-top: 18px;
+      font-weight: 600;
+      color: #e63946;
+      min-height: 1.2em;
+    }
+
+    #valentineImage {
+      margin-top: 16px;
+      max-width: 100%;
+      border-radius: 12px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img
+      class="top-image"
+      src="https://media1.tenor.com/m/DeAuxYlaEVMAAAAd/elijah-wood.gif"
+      alt="Elijah Wood gif"
+    />
+
+    <h1 id="question">Will you be my Valentine?</h1>
+    <p id="subtitle">Choose wisely…</p>
+
+    <div class="buttons" id="buttonsRow">
+      <button class="yes-btn" onclick="sayYes()">Yes</button>
+      <button id="noButton" class="no-btn" onclick="sayNo()">No</button>
+    </div>
+
+   
+    <div id="response"></div>
+
+    <img
+      id="valentineImage"
+      src="https://i.pinimg.com/736x/9e/70/1a/9e701a0336fa62f0822aaa8a7a48f490.jpg"
+      alt="Kamsamida meme"
+    />
+  </div>
+
+  <script>
+    function sayYes() {
+      document.getElementById("response").textContent = "Yippie 💘";
+      document.getElementById("valentineImage").style.display = "block";
+      document.querySelector(".top-image").style.display = "none";
+
+      document.getElementById("subtitle").style.display = "none"; 
+      document.getElementById("buttonsRow").style.display = "none"; 
+      document.getElementById("question").style.display = "none";   
+    }
+
+    function sayNo() {
+      document.getElementById("response").textContent = "not an option •ᴗ•";
+      document.getElementById("noButton").style.display = "none";
+    }
+  </script>
+</body>
+</html>

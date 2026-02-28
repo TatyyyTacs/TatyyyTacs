@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Student Blog</title>
+
+<style>
+
+/* Basic reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+
+/* Descendant selector */
+header h1 {
+  margin: 0;
+}
+
+/* Child selector */
+nav > ul {
+  list-style: none;
+  display: flex;          /* Flexbox*/
+  gap: 1rem;
+  padding: 0;
+}
+
+/* Descendant selector */
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Main layout using Flexbox */
+.layout {
+  display: flex;          
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Blog posts section */
+section {
+  flex: 3;
+}
+
+/* Sidebar */
+aside {
+  flex: 1;
+  background-color: #fff3cd;
+  padding: 1rem;
+}
+
+/* Articles */
+article {
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Adjacent sibling selector */
+h2 + p {
+  font-style: italic;
+  color: gray;
+}
+
+/* General sibling selector */
+h3 ~ ul {
+  color: #444;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+  .layout {
+    flex-direction: column;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <h1>Taty's Blog</h1>
+  </div>
+</header>
+
+<div class="container">
+  <main class="layout">
+
+    <section>
+      <article>
+        <h2>My First Post</h2>
+        <p>
+          This is my first blog post. Technically second.
+        </p>
+        <p>February 28, 2026</p>
+      </article>
+
+      <article>
+        <h2>Learning Flexbox</h2>
+        <p>
+          Flexbox helps arrange content in rows or columns. It makes layouts easier. This is more arrange than my previous one, right?
+        </p>
+        <p>February 28, 2026</p>
+      </article>
+    </section>
+
+    <aside>
+      <h3>About Me</h3>
+      <p>I'm Alyssa Tatyana Tacubao. A student in XU that is barely holding on. xD</p>
+
+      <h3>Projects</h3>
+      <ul>
+        
+        <a href=https://codepen.io/ALYSSA-TATYANA-MAGARET-TACUBAO/pen/MYeQdxe target="_blank">Act1: Student ID</a>
+        <a href=https://codepen.io/ALYSSA-TATYANA-MAGARET-TACUBAO/pen/YPWOONL target="_blank">Act2: Class Schedule</a>
+       <a href=https://codepen.io/ALYSSA-TATYANA-MAGARET-TACUBAO/pen/pvbYxeB target="_blank">ValentinesAct</a>
+      </ul>
+    </aside>
+
+  </main>
+</div>
+
+<footer>
+  <p>&copy; 2026 Taty's Blog</p>
+</footer>
+
+</body>
+</html>
